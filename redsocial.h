@@ -1,11 +1,11 @@
 #ifndef redsocial_h
- #define  redsocial_h    
+ #define redsocial_h    
  #include "Usuario.h"
  #include "publicacion.h" 
-#include <cstdlib> 
 #include <vector>
 #include <iostream>
-using namespace std;
+#include <string>
+using namespace std;    
 
 class Redsocial {
     private: 
@@ -22,7 +22,7 @@ class Redsocial {
     Redsocial(string nombre);
     Redsocial(string nombre,vector<Usuario*>usuarios);
     Redsocial(string nombre,vector<Usuario*>usuarios,vector<Publicacion>publicaciones);
-    
 
+};
 
 #endif
