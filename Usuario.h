@@ -14,11 +14,10 @@ int edad;
 string nacionalidad;
 vector<Usuario*>amigos;
 vector<Publicacion>publicaciones;
-int getid(){
-return this->id;
-}
+int getId();
+int crearId();
 void mostrar():
-void mostrarAmios();
+void mostrarAmigos();
 void mostrarPublicaciones();
 void agregarAmigo(Usuario* nuevoAmigo);
 void crearPublicacion();
@@ -27,4 +26,5 @@ Usuario(string nombre);
 Usuario(string nombre, int edad);
 Usuario(string nombre,int edad,string nacionalidad);
 
-}
+};
+#endif
