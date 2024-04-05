@@ -4,7 +4,8 @@
 #include <vector>
 #include <string>
 using namespace std;
-    class Publicacion;
+    class Buscogymbro;
+        class Publicacion;
 class Usuario{
 private:
 int Id;
@@ -25,6 +26,7 @@ Usuario(string nombre);
 Usuario(string nombre, int edad);
 Usuario(string nombre,int edad,string nacionalidad);
 int crearId();
+void buscogymbro();
 
 };
 #endif

@@ -13,10 +13,10 @@ class Redsocial {
     vector<Publicacion>publicaciones;
     public:
     string nombre;
-    int numusers;
-    int numpubli;
+    int numeroDeUsuarios;
+    int numeroDePublicaciones;
     void agregarUsuario();
-    void mostrarUsuario();
+    void mostrarUsuarios();
     void mostrarPublicaciones();
     Usuario* getUsuario(int  id);
     Redsocial(string nombre);
