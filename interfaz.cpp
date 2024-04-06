@@ -1,43 +1,56 @@
 #include <iostream>
-#include "redsocial.h"
 #include <cstdlib> 
+#include "redsocial.h"
 using namespace std;
-int menuP,menu;
-int idA,idU;
-user* perfildeuser;
+
+int mainmenu;
+int usermenu;
+int userId;
+int friendId;
+user* userprofile;
+user* friendprofile;
 
 int main(){
-Redsocial g1("gymsocial");
-
 cout<<"Bienvenido al sistema de gymsocial"<<endl;
 
 cout<<"En que le podemos ayudar? "<<endl;
-cout<<"                Menu                                  "<<endl;
-cout<< "1- Ver lista de usuarios"<<endl;
-cout<< "2-Ver lista de publicaciones"<<endl;
-cout<< "3-Entrar al perfil de un miembro de gymsocial"<<endl;
-cout<< "4-Agregar un nuevo usuario de gymsocial"<<endl;
-cout<< "6-Salir del sitio"<<endl;
+cout<<"    Menu     "<<endl;
+cout<< "1-Lista de usuarios"<<endl;
+cout<< "2-Lista de publicaciones"<<endl;
+cout<< "3-Ingresar a Gymsocial"<<endl;
+cout<< "4-Registrarse a Gymsocial"<<endl;
+cout<< "6-Abandonar sitio"<<endl;
 
-cout<<"Ingrese la accion a ejecutar"<<endl;
+cout<<"Indique la instruccion"<<endl;
 
-cin>>menuP;
-switch(menuP){
-case 1:
-   cout<<"Has elegido ver la lista de los usuarios de gymsocial"<<endl;
-   g1.mostrarUsuarios();
-   break;
-case 2:
-   cout<<"Has elegido ver la lista de publicaciones"<<endl;
-   g1.mostrarPublicaciones();
-   break;
+cin>>mainmenu;
+Redsocial mainObject("gymsocial");
+
+switch(mainmenu){
+   case 1:
+      cout<<" Lista de usuarios de gymsocial"<<endl;
+      mainObject.mostrarUsuarios();
+      break;
+   case 2:
+      cout<<"Lista de publicaciones de Gymsocial"<<endl;
+      mainObject.mostrarPublicaciones();
+      break;
 
    case 3: 
-   cout<<"Has elegido entrar al perfil de un miembro de gymsocial"<<endl;
-   cout<<"Dame el id del usuario"<<endl;
-   cin>>idU;
-   perfil
+      cout<<" Ingresando como miembro de gymsocial"<<endl;
+      cout<<"Dame el id del usuario"<<endl;
+      cin>>userId:
+      userprofile = mainObject.getusuario(userId);
+      break;
 
+   case 4:
+      cout<<"Registrar usuario a Gymsocial"<<endl;
+      mainObject.agregarUsuario();
+
+
+   default:
+      cout<<"Elige una opcion valida"<<endl;
+      break;
 
 }
 

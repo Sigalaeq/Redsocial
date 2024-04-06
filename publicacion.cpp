@@ -1,5 +1,4 @@
 #include "publicacion.h"
-#include "usuario.h"
 #include <string>
 #include <iostream>
 #include <vector>
@@ -11,16 +10,15 @@ void Publicacion::mostrarPublicacion(){
     cout<<"Usuario:"<<ptrusuario->nombre<<endl;
 }
 
-Publicacion::Publicacion(Usuario* usuario,string fecha, string contenido){
-this->ptrusuario=usuario
-this->fecha=fecha;
-this->contenido=contenido;
-
-
+Publicacion::Publicacion(Usuario* usuario, string fecha, string contenido){
+    this->usuario = usuario
+    this->fecha = fecha;
+    this->contenido = contenido;
 }
 
-class Buscogymbro: public Publicacion{
+/*class Buscogymbro: public Publicacion{
 
     public:
     void mostrarGymbropublicacion()
 }
+*/
