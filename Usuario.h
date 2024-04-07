@@ -4,29 +4,29 @@
 #include <vector>
 #include <string>
 using namespace std;
-    class Buscogymbro;
-        class Publicacion;
+    //class Buscogymbro;
+class Publicacion;
 class Usuario{
-private:
-int Id;
-public:
-string nombre;
-int edad;
-string nacionalidad;
-vector<Usuario*>amigos;
-vector<Publicacion>publicaciones;
-int getId();
-void mostrar():
-void mostrarAmigos();
-void mostrarPublicaciones();
-void agregarAmigo(Usuario* nuevoAmigo);
-void crearPublicacion();
-Usuario* getAmigo(int id);
-Usuario(string nombre);
-Usuario(string nombre, int edad);
-Usuario(string nombre,int edad,string nacionalidad);
-int crearId();
-void buscogymbro();
+    private:
+        int id;
+    public:
+        string nombre;
+        int edad;
+        string nacionalidad;
+        vector<Usuario*> amigos;
+        vector<Publicacion*> publicaciones;
+        int getId();
+        void mostrar();
+        void mostrarAmigos();
+        void mostrarPublicaciones();
+        void agregarAmigo(Usuario* nuevoAmigo);
+        void crearPublicacion();
+        Usuario* getAmigo(int id);
+        Usuario(string nombre);
+        Usuario(string nombre, int edad);
+        Usuario(string nombre,int edad,string nacionalidad);
+        int randomid();
+        //void buscogymbro();
 
 };
 #endif
