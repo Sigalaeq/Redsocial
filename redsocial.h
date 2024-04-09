@@ -11,6 +11,8 @@ class Redsocial {
     private: 
         vector<Usuario*> usuarios;
         vector<Publicacion*> publicaciones;
+        vector<Usuario*> usuarios;
+        vector<Publicacion*> publicaciones;
     public:
         string nombre;
         int numeroDeUsuarios;

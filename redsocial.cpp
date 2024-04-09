@@ -1,4 +1,5 @@
 #include "redsocial.h"
+#include "redsocial.h"
 using namespace std;  
 Redsocial::Redsocial(string nombre){
     this->nombre=nombre;
