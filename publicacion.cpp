@@ -18,9 +18,9 @@ Publicacion::Publicacion(Usuario* usuario, string fecha, string contenido){
 
 
 
-//class Buscogymbro: public Publicacion{
+class Buscogymbro: public Publicacion{
 
-//    public:
-//    void mostrarGymbropublicacion();
-//};
+    public:
+    void mostrarGymbropublicacion();
+};
 
