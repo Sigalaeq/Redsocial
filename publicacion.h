@@ -6,6 +6,7 @@
 #include "Usuario.h"
 using namespace std;
 
+class Usuario;
 class Publicacion{
     private:
         int id;

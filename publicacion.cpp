@@ -16,8 +16,11 @@ Publicacion::Publicacion(Usuario* usuario, string fecha, string contenido){
     this->contenido = contenido;
 }
 
-/*class Buscogymbro: public Publicacion{
 
-    public:
-    void mostrarGymbropublicacion();
-};
+
+//class Buscogymbro: public Publicacion{
+
+//    public:
+//    void mostrarGymbropublicacion();
+//};
+

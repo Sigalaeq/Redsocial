@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "publicacion.h"
 using namespace std;
     //class Buscogymbro;
 class Publicacion;
